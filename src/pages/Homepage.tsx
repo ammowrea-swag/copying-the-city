@@ -3,7 +3,7 @@ import { PageLayout } from "../components/PageLayout";
 
 const byline = [
   {
-    name: "This is not a name",
+    name: "Ashley Mowreader",
     url: "https://www.latimes.com/people/nobody",
   },
 ];
@@ -12,7 +12,7 @@ export const Homepage = () => (
   <PageLayout>
     <div>
       <div className="container">
-        <h1 className="headline">This is not a headline</h1>
+        <h1 className="headline">I Am Copying a News Page from The City</h1>
         <div className="attribution">
           <p className="byline">
             By{" "}
@@ -34,15 +34,12 @@ export const Homepage = () => (
 
       <div className="container">
         <p className="copy">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-          pellentesque luctus magna sed auctor. Cras ullamcorper urna mattis
-          lectus sagittis, quis vehicula dui vestibulum.
+          I am not sure what to write here, so I am just going to fill this space
+          with some placeholder text. This is supposed to be an article copied
+          from The City, a news organization in New York City.
         </p>
         <p className="copy">
-          Aliquam sollicitudin libero vel diam cursus, ut egestas ex
-          scelerisque. Nullam vestibulum metus interdum, dictum erat vel, luctus
-          elit. Nullam aliquam ante elit, mollis aliquet nulla efficitur
-          molestie. Praesent a tempus mi.
+          This is the final part of my assignment and I am just happy to have it done I think. I had some trouble copying pages from other newsrooms, which was upsetting, but glad that The City made a useful ReadMe.md for me to follow for this project.
         </p>
       </div>
     </div>

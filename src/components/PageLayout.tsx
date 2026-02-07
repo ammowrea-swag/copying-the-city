@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import pym from "pym.js";
 
-import { ReactComponent as Logo } from "../assets/images/logo.svg";
+import Logo from "../assets/images/tulip.png";
 import { ReactComponent as TwitterIcon } from "../assets/images/social-icons/twitter.svg";
 import { ReactComponent as InstagramIcon } from "../assets/images/social-icons/instagram.svg";
 import { ReactComponent as FacebookIcon } from "../assets/images/social-icons/facebook.svg";
@@ -11,7 +11,7 @@ const Header = () => (
     <div className="nav-container">
       <div className="nav-logo">
         <a href="https://thecity.nyc/" aria-label="THE CITY">
-          <Logo />
+          <img src={Logo} alt="tulip" />
         </a>
       </div>
       <div className="nav-title"></div>
@@ -79,9 +79,6 @@ const Footer = () => {
         <ul className="footer-links">
           <li>
             <a href="https://www.thecity.nyc/about-us/">About</a>
-          </li>
-          <li>
-            <a href="https://donorbox.org/nycdonate">Donate</a>
           </li>
           <li>
             <a href="https://www.thecity.nyc/team/">Team</a>
