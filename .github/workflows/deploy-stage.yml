@@ -18,14 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Load .env file
         uses: xom9ikk/dotenv@v2
 
       - id: install-node
         name: Install Node.js 16.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 16
           cache: "npm"
@@ -70,7 +70,7 @@ jobs:
 
     steps:
       - name: Fetch repository for `lighthouserc.json`
-        uses: actions/checkout@v3
+        uses: actions/checkout@4
 
       - name: Download build
         uses: actions/download-artifact@v4
@@ -91,7 +91,7 @@ jobs:
     needs: [build]
     steps:
       - name: Download build
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: build
           path: ./build
