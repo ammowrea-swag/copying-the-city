@@ -70,7 +70,7 @@ jobs:
 
     steps:
       - name: Fetch repository for `lighthouserc.json`
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Download build
         uses: actions/download-artifact@v4
@@ -95,13 +95,6 @@ jobs:
         with:
           name: build
           path: ./build
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_S3_STAGING_REGION }}
 
       - name: Prepare the Delivery path prefix
         uses: actions/github-script@v6
